@@ -3,11 +3,13 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>Color</th>
   </tr>
 
 <% @widgets.each do |widget| %>
   <tr>
     <td><%=h widget.name %></td>
+    <td><%=h widget.color %></td>
     <td><%= link_to 'Show', widget %></td>
     <td><%= link_to 'Edit', edit_widget_path(widget) %></td>
     <td><%= link_to 'Destroy', widget, :confirm => 'Are you sure?', :method => :delete %></td>
